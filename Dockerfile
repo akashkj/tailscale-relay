@@ -2,7 +2,7 @@ FROM python:3-alpine AS builder
 
 RUN pip install lastversion
 ARG CHANNEL=stable
-ARG ARCH=amd64
+ARG ARCH=arm64
 RUN mkdir /build
 WORKDIR /build
 RUN apk add --no-cache curl tar
